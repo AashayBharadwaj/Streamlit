@@ -55,33 +55,25 @@ def plot_monthly_consumption_new(df):
     st.pyplot(fig)
 
 
-# def main():
-#     st.title("Electricity Consumption Analysis")
-#     uploaded_file = st.file_uploader("Upload your data file", type=['csv'])
-    
-#     if uploaded_file is not None:
-#         df = load_data(uploaded_file)
-        
-#         st.write("Visualization of Energy Use:")
-#         plot_time_series(df)
-
-#         df = create_features(df)
-
-#         st.write("Hourly Consumption Plot: new code")
-#         plot_hourly_consumption_new(df)
-        
-#         st.write("Monthly Consumption Plot: New")
-#         plot_monthly_consumption_new(df)
-
-#         # st.write("Train/Test Split Visualization:")
-#         # train_test_split_visual(df)
-
-# if __name__ == "__main__":
-#     main()
 
 
 def main():
     st.title("Electricity Consumption Analysis")
+    # Use the raw URL from GitHub for the image
+    image_url = 'https://github.com/AashayBharadwaj/Streamlit/blob/main/alterok_desktop.png'
+
+    # Display the image
+    st.image(image_url, caption='Yo Yo Yo!', width=700)
+
+    st.markdown("""
+        ### Welcome!
+        **You can add your energy consumption file here and get a distribution chart along with a box plot showing an hourly and monthly consumption trend.**
+        Upload your CSV file to begin.
+    """)
+
+
+
+    
     uploaded_file = st.file_uploader("Upload your data file", type=['csv'])
 
     if uploaded_file is not None:

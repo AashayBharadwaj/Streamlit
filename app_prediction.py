@@ -60,8 +60,8 @@ def plot_monthly_consumption_new(df):
 def main():
     st.title("Electricity Consumption Analysis")
     # Use the raw URL from GitHub for the image
-    image_url = 'https://github.com/AashayBharadwaj/Streamlit/blob/main/alterok_desktop.png'
-
+    image_url = 'https://github.com/AashayBharadwaj/Streamlit/blob/ccefde4d4148f9abec7e7905d7f575d435559c14/alterok_desktop.png'
+                
     # Display the image
     st.image(image_url, caption='Yo Yo Yo!', width=700)
 

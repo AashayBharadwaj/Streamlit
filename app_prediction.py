@@ -4,7 +4,7 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-import statsmodels.api as sm
+# import statsmodels.api as sm
 
 def load_data(file_path, date_col_index=0):
     df = pd.read_csv(file_path, parse_dates=[date_col_index])
